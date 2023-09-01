@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Maricris Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/56bf8367ea.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="preloader"></div>
+
+        <div class="popup">
+            <button id="close">&times;</button>
+            <h2>"Website in Progress"</h2>
+            <p>Thanks for visiting! Please excuse the mess while I make it even better <i class="fa-solid fa-face-smile"></i></p>
+        </div>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+           <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <span>Maricris</span><br>Villaplana <i class="fa-solid fa-heart"></i></h1>
+           </div> 
+        </div>
+    </div>
+    <!--ABOUT-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+                <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Allow me to introduce myself - I'm a dedicated/aspiring UI/UX designer who loves making digital experiences that are both
+                    engaging and meaningful to users. With a background in design theory and a deep knowlegde of how people act, I love the 
+                    challenge of turning complicated ideas into interfaces that are user friendly. As I've moved through the world of design, 
+                    I've learned how to master wireframing, prototyping, and user research, enabling me to bring innovative ideas to life.
+                </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Wireframing</span><br>Creating low-fidelity sketches or digital prototypes to outline the layout and basic functionality of a design.</li>
+                            <li><span>Prototyping</span><br>I frequently use Figma and Adobe XD to construct interactive prototypes that mimic the user experience.
+                            </li>
+                            <li><span>Coding Basics</span><br>I am familiar with HTML/CSS and know how designs are implemented in code due to my years of study.
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX Designer</span><br>Hospital Appointment System<p>Requirements for System Analysis and Design Course
+                            </p></li>
+                            <li><span>Project Manager | UI/UX Designer</span><br>Web Based School Management System<p>Requirements for Software Engineering Course</p></li>
+                            <li><span>UI/UX Designer | Researcher</span><br>Warehouse Management System <p>Requirements for System Integration and Architecture</p></li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Primary</span><br>Don Emilio Salumbides Elementary School<p>2007-2012</p></li>
+                            <li><span>Secondary</span><br>Kalayaan National High School<p>2013-2016</p></li>
+                            <li><span>Tertiary</span>
+                                <ol>
+                                    <li>Bestlink College of the Philippines<p>Accountancy & Business Management (2017-2018)</p></li>
+                                <li>St. Clare College<p>Bachelor of Science in Business Administration (2018-2019)</p></li>
+                            <li>Quezon City University<p>Bachelor of Science in Information Technology (2020-Present)</p></li> 
+                        </ol>
+                        </li>
+                        </ul>
+                        </ul>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SERVICES-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Prototyping</h2>
+                    <p>Important aspect of the UI/UX design process is prototyping. Creating prototypes as a UI/UX designer is a way to visually and interactively depict the design concepts and user experiences of a digital product, such as a website or mobile application, prior to its development.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Wireframing</h2>
+                    <p>Wireframing is a fundamental UI/UX design activity, functioning as a crucial step in the early phases of designing digital products such as websites, mobile apps, and software interfaces. Wireframing is the process by which a UI/UX designer creates low-fidelity, simplified representations of a user interface to define the layout and structure of a digital product. </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-bookmark"></i>
+                    <h2>User Research</h2>
+                    <p>User research is an integral part of the UI/UX design process, serving as the foundation for developing digital products that are centered on the user. As a UI/UX designer, conducting user research entails a methodical and iterative process of collecting data about the target audience's behaviors, requirements, and preferences.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!--PORTFOLIO-->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Hospital Appointment System</h3>
+                    <p>This system was made when covid strikes. The app display news and status of a specific hospital and let the user set appointment to hospital.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Web-Based School Management System</h3>
+                    <p>The system was made for JEC Christiam school who's stuck on manual system of managing schools data.
+                        The web app have different features that can help administrator of the school to manage and secured 
+                        their data. 
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Warehouse Management System</h3>
+                    <p>The system was made for Pandayo Coffee Shop. The system let the admin/owner know their inventory levels
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+
+  <!--CONTACT INFO-->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>mvillaplana@icloud.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>09939896332</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/maricrisvillaplana25/"><i><i class="fa-brands fa-facebook"></i></i></a>
+                    <a href="https://www.threads.net/@_criscrox"><i><i class="fa-brands fa-twitter-square"></i></i></a>
+                    <a href="https://www.instagram.com/_criscrox/?hl=en"><i><i class="fa-brands fa-instagram"></i></i></a>
+                    <a href="https://www.linkedin.com/in/maricris-villaplana-520a78240/"><i><i class="fa-brands fa-linkedin"></i></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>mwehehehe <i class="fa-solid fa-ghost"></i></p>
+    </div>
+  </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyJujLQBeQnpDfIYBE5fptXoT8_sjhZ2Bp62soBNGPBCAzzKIBbNqyh03G_Au5SE__9Cw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },1000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+      <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function() {
+            loader.style.display="none";
+        })
+            
+        </script>
+
+        <script>
+            document.querySelector("#close").addEventListener("click", function(){
+                document.querySelector(".popup").style.display = "none";
+            })
+        </script>
+
+    </body>
+</html>
